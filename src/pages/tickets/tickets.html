@@ -1,0 +1,81 @@
+
+<ion-header>
+
+  <ion-navbar>
+
+  <ion-buttons end>
+    <button ion-button end id="navbarBackButton" color="dark" icon-only (click)="onGoRoot()">
+      <ion-icon name="home"></ion-icon>
+    </button>
+  </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-row justify>
+  <ion-col col-12>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  </ion-col>
+</ion-row>
+
+
+  <ion-list>
+
+<button ion-item text-center (click)="onGoToTicket1()" *ngFor="let ticketGroup of ticketCollection">
+      <h2>{{ ticketGroup.category | uppercase }}</h2>
+      <h4>{{ ticketGroup.tickets[0].tiPriority }}</h4> 
+      <h4>{{ ticketGroup.tickets[0].tiContact }}</h4>
+      <h4>{{ ticketGroup.tickets[0].tiTicketActualEffort }}</h4>
+    </button>
+    
+  </ion-list>
+
+<ion-list>
+
+<button ion-item text-center (click)="onGoToTicket2()" *ngFor="let ticketGroup of ticketCollection">
+    <h2>{{ ticketGroup.category | uppercase }}</h2>
+    <h4>{{ ticketGroup.tickets[1].tiPriority }}</h4>
+    <h4>{{ ticketGroup.tickets[1].tiContact }}</h4>
+    <h4>{{ ticketGroup.tickets[1].tiTicketActualEffort }}</h4>
+  </button>
+
+</ion-list>
+
+<ion-list>
+
+<button ion-item text-center (click)="onGoToTicket3()" *ngFor="let ticketGroup of ticketCollection">
+    <h2>{{ ticketGroup.category | uppercase }}</h2>
+    <h4>{{ ticketGroup.tickets[2].tiPriority }}</h4>
+    <h4>{{ ticketGroup.tickets[2].tiContact }}</h4>
+    <h4>{{ ticketGroup.tickets[2].tiTicketActualEffort }}</h4>
+  </button>
+
+</ion-list>
+
+<ion-list>
+
+<button ion-item text-center (click)="onGoToTicket4()" *ngFor="let ticketGroup of ticketCollection">
+    <h2>{{ ticketGroup.category | uppercase }}</h2>
+    <h4>{{ ticketGroup.tickets[3].tiPriority }}</h4>
+    <h4>{{ ticketGroup.tickets[3].tiContact }}</h4>
+    <h4>{{ ticketGroup.tickets[3].tiTicketActualEffort }}</h4>
+  </button>
+
+</ion-list>
+
+<ion-list>
+
+<button ion-item text-center (click)="onGoToTicket5()" *ngFor="let ticketGroup of ticketCollection">
+    <h2>{{ ticketGroup.category | uppercase }}</h2>
+    <h4>{{ ticketGroup.tickets[4].tiPriority }}</h4>
+    <h4>{{ ticketGroup.tickets[4].tiContact }}</h4>
+    <h4>{{ ticketGroup.tickets[4].tiTicketActualEffort }}</h4>
+  </button>
+
+</ion-list>
+
+
+</ion-content>

@@ -1,0 +1,52 @@
+<ion-header>
+
+  <div>
+    <img id="logo" src="../../assets/logo.png">
+  </div>
+
+  <h2 class="welcome">Welcome</h2>
+  <p class="info">Please insert your name and password</p>
+</ion-header>
+
+
+
+<ion-content padding>
+
+  <form method="POST">
+
+    <!-- <ion-input text-center padding-vertical placeholder="Benutzername" clearInput></ion-input> -->
+    <ion-item>
+        <ion-label floating>Benutzername</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Passwort</ion-label>
+        <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <div id="divRemember">
+        <input type="checkbox" id="remember" name="remember" value="remember" />
+        <label for="remember">Remember me</label>
+      </div>
+
+    <!-- <ion-input id="inputPass" text-center padding-vertical type="password" placeholder="Passwort" clearinput></ion-input> -->
+
+    <button id="loginbutton" ion-button block (click)="onGoToServers()">Anmelden</button>
+
+   
+    <div id="forgotPass">
+      <a href="https://www.google.at" id="passwortvergessen">Passwort Vergessen</a>
+    </div>
+    
+   
+
+    
+
+
+  </form>
+
+
+
+
+</ion-content>

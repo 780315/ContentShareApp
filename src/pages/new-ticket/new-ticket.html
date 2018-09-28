@@ -1,0 +1,104 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Neues Ticket</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+
+
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Prioritat</ion-label>
+      <ion-select [(ngModel)]="Prioritat">
+        <ion-option value="High">High</ion-option>
+        <ion-option value="Middle">Middle</ion-option>
+        <ion-option value="Low">Low</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-label text-center stacked>Kontakt</ion-label>
+      <ion-input type="text" name="nTiContact" value=""></ion-input>
+    </ion-item>
+
+    <!--<ion-item>
+      <ion-label text-center stacked>Projekt</ion-label>
+      <ion-input type="nTiProject"></ion-input>
+    </ion-item>-->
+
+    <!-- <ion-item>
+      <ion-label text-center stacked>Akt</ion-label>
+      <ion-input type="nTiAkt"></ion-input>
+    </ion-item> -->
+
+    <!-- <ion-item>
+      <ion-label text-center stacked>Anfrageherkunft</ion-label>
+      <ion-input type="nTiRequester"></ion-input>
+    </ion-item> -->
+
+    <ion-item>
+      <ion-label text-center stacked>Service Typ</ion-label>
+      <ion-input type="nTiServiceType"></ion-input>
+    </ion-item>
+    <!-- <ion-item>
+      <ion-label text-center stacked>Wunschdatum der Lieferung</ion-label>
+      <ion-input type="text" name="nTiwisheddateofdelivery" value=""></ion-input>
+    </ion-item> -->
+
+    <!-- <ion-item>
+      <ion-label text-center stacked>Estimated hours</ion-label>
+      <ion-input type="nTiEstimatedHour"></ion-input>
+    </ion-item> -->
+
+    <!-- <ion-item>
+      <ion-label text-center stacked>Voraussichlitliche Lieferung</ion-label>
+      <ion-input type="nTiExpectedDelivery"></ion-input>
+    </ion-item> -->
+
+    <!-- <ion-item>
+      <ion-label text-center stacked>Tasachlicher Aufwand [Stunden]</ion-label>
+      <ion-input type="nTiTicketActualEffort"></ion-input>
+    </ion-item> -->
+
+
+    <!-- <ion-item>
+      <ion-label text-center stacked>Durchlaufzeit [Tage]</ion-label>
+      <ion-input type="nTiProcessingDays"></ion-input>
+    </ion-item> -->
+
+
+    <!-- <ion-item>
+      <ion-label text-center stacked>Delta(SOLL/IST)</ion-label>
+      <ion-input type="nTiDelta"></ion-input>
+    </ion-item> -->
+
+
+
+    <!-- <ion-item>
+      <ion-label fixed>Resume</ion-label>
+      <ion-input type="nTiSummary"></ion-input>
+    </ion-item> -->
+
+    <ion-item>
+      <ion-label text-center stacked>Description</ion-label>
+      <ion-textarea placeholder="" name="nTiComment" value=""></ion-textarea>      
+    </ion-item>
+    <div padding>
+      <button ion-button full>Speichern & senden</button>
+    </div>
+  </ion-list>
+
+  <ion-list>
+    <ion-item class="border">
+      Feld Hinzufügen
+      <button ion-button item-end icon-start icon-only color="alert">
+        <ion-icon name="add-circle"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+</ion-content>

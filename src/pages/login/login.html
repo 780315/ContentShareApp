@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar></ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list text-center inset>
+    <h2>Servers</h2>
+    <button ion-item *ngFor="let server of servers" (click)="onGoToMainmenue()">
+      {{ server }}
+    </button>
+  </ion-list>
+
+</ion-content>

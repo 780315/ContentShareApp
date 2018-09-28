@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>    
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <div id="bg"></div>
+  <ion-list>
+    <ion-item-sliding #slidingItem>
+      <button ion-item block class="mainButtons" (click)="onGoToTickets()">Tickets<ion-icon name="arrow-back"></ion-icon></button>
+      <ion-item-options (ionSwipe)="onGoToNewTicket()">
+        <button ion-button expandable color="alert" (click)="onGoToNewTicket()">
+          <ion-icon name="create"></ion-icon>
+          Neu
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding #item>
+      <button ion-item block class="mainButtons" (click)="onGoToTasks()">Aufgaben<ion-icon name="arrow-back"></ion-icon></button>
+      <ion-item-options (ionSwipe)="onGoToNewTask()">
+        <button ion-button expandable color="alert" (click)="onGoToNewTask()">
+          <ion-icon name="create"></ion-icon>
+          Neu
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding #item>
+      <button ion-item block class="mainButtons" (click)="onGoToUpload()">Upload<ion-icon name="arrow-back"></ion-icon></button>
+      <ion-item-options (ionSwipe)="onGoToUpload()">
+        <button ion-button expandable color="alert">
+          <ion-icon name="create"></ion-icon>
+          Neu
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding #item>
+      <button ion-item block class="mainButtons" (click)="onGoToChat()">Chat<ion-icon name="arrow-back"></ion-icon></button>
+      <ion-item-options (ionSwipe)="onGoToChat()">
+        <button ion-button expandable color="alert" (click)="onGoToContacts()">
+          <ion-icon name="create"></ion-icon>
+          Suchen
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding #item>
+      <button ion-item block class="mainButtons" (click)="onGoToContacts()">Kontakte<ion-icon name="arrow-back"></ion-icon></button>
+      <ion-item-options (ionSwipe)="onGoToContacts()">
+        <button ion-button expandable color="alert">
+          <ion-icon name="create"></ion-icon>
+          Neu
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding #item>
+      <button ion-item block class="mainButtons" (click)="onGoToContacts()">Companies<ion-icon name="arrow-back"></ion-icon></button>
+      <ion-item-options (ionSwipe)="onGoToContacts()">
+        <button ion-button expandable color="alert">
+          <ion-icon name="create"></ion-icon>
+          Neu
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-menu side="right" [content]="mycontent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title text-center>
+
+        <ion-icon menuClose large name="close-circle"></ion-icon>
+
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+
+      <ion-item (click)="onGoToSettings()">Settings</ion-item>
+      <ion-item (click)="onGoToFavorites()">Favoriten</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #mycontent></ion-nav>
+
+<div *ngIf="showSplash" class="video">
+  <video class="video__hero" autoplay>
+    <source src="../assets/cut-intro.mp4" type="video/mp4">
+  </video>
+</div>
+

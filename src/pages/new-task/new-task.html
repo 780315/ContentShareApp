@@ -1,0 +1,50 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>New task</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+
+
+
+
+
+  <ion-list>
+    <ion-item>
+      <ion-label text-center stacked>Description</ion-label>
+      <ion-input type="text" name="nTiDescription" value=""></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label text-center stacked>Deadline</ion-label>
+      <ion-input type="nTiDeadline"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label text-center stacked>Responsible Colleague</ion-label>
+      <ion-textarea placeholder="" name="nTiResponsibleColleague" value=""></ion-textarea>      
+    </ion-item>
+
+    <ion-item>
+      <ion-label text-center stacked>Status</ion-label>
+      <ion-textarea placeholder="" name="nTiStatus" value=""></ion-textarea>      
+    </ion-item>
+
+    <div padding>
+      <button ion-button full>Speichern & senden</button>
+    </div>
+  </ion-list>
+
+  <ion-list>
+    <ion-item class="border">
+      Feld Hinzufügen
+      <button ion-button item-end icon-start icon-only color="alert">
+        <ion-icon name="add-circle"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+</ion-content>

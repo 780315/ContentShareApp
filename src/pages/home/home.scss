@@ -1,0 +1,80 @@
+page-home {
+
+    .input-ios[clearInput] .text-input {
+      padding-right: 0px !important;
+    }
+    .item-input{
+      background-color: #191919 !important;
+      padding-left: 8px !important;
+    }
+    .text-input{
+      margin-left: 10px !important;
+      margin-top: 10px !important;    
+      margin-bottom: 0px !important;
+    }
+    ion-label{
+      margin-left: 10px !important;
+      margin: auto;
+    }
+    .item-inner{
+      border: none !important;
+    }
+    ion-input {
+      margin: auto;
+      width: 100%;
+      border-radius: 5px;
+      padding: 0 0 0 0 !important;
+      height: 50px;
+      border: 1px white solid;
+      text-align: center;
+      background-color: #191919 !important;
+    }
+  
+    #inputPass {
+      margin-top: 15px !important;
+    }
+  
+    #loginbutton {
+      margin-top: 35px;
+    }
+  
+    #divRemember,
+    #forgotPass {
+      margin: auto;
+      text-align: left;      
+      margin-left: 10px;  
+    }
+  
+    #forgotPass {
+      padding: 20px 0;
+      text-decoration: underline;
+    }
+  
+    #passwortvergessen {
+      color: white !important;
+      text-decoration: none;
+    }
+  
+    #logo{
+      margin-top: 30%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 20%;
+    }
+    .welcome{
+      color: white;
+      text-align: center;
+      font-size: 42px;
+      margin-top: 50px;
+    }
+    .info{
+      color: white;
+      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    #divRemember{
+      margin-top: 15px;
+    }
+  }

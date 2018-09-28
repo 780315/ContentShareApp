@@ -1,0 +1,105 @@
+export default [
+                {
+                    category: 'tickets',
+                    tickets: [{
+                    
+                    tiPriority: "hoch",
+                    tiContact:  "CONTENTShare",
+                    tiProject: "dragon",
+                    tiAkt:  "Tu545",
+                    tiRequester: "someone",
+                    tiDeliverwish: "01.01.2019",
+                    tiServiceType: "selected",
+                    tiEstimatedHours:"12",
+                    tiExpectedDelivery: "01.01.2019",
+                    tiTicketActualEffort: "10",
+                    tiTicketProcessingDays: "6",
+                    tiTicketDelta: "0,6",
+                    tiTicketSummary: "Lorem Ipsum san quote de gutenburt inlas dela",
+                    tiNote: "empty",
+                    tiTasks: "none",
+                    tiDocBox: "21312.jpg,6255.png",
+                    tiHistory: "3 Zugriffe"                    
+                },            
+                {
+                    tiPriority: "mittel",
+                    tiContact: "CONTENTShare",
+                    tiProject: "sql",
+                    tiAkt: "zi6788",
+                    tiRequester: "Martin",
+                    tiDeliverwish: "01.01.2019",
+                    tiServiceType: "selected",
+                    tiEstimatedHours: "34",
+                    tiExpectedDelivery: "01.01.2019",
+                    tiTicketActualEffort: "33",
+                    tiTicketProcessingDays: "2",
+                    tiTicketDelta: "0,6",
+                    tiTicketSummary: "Lorem Ipsum san quote de gutenburt inlas dela",
+                    tiNote: "bitte um rückruf",
+                    tiTasks: "2",
+                    tiDocBox: "blue.jpg",
+                    tiHistory: "empty"
+                },
+                {
+                    tiPriority: "niedrig",
+                    tiContact: "CONTENTShare",
+                    tiProject: "dragon",
+                    tiAkt: "Tu545",
+                    tiRequester: "Neskovic",
+                    tiDeliverwish: "14.01.2019",
+                    tiServiceType: "voll",
+                    tiEstimatedHours: "18",
+                    tiExpectedDelivery: "14.01.2019",
+                    tiTicketActualEffort: "10",
+                    tiTicketProcessingDays: "4",
+                    tiTicketDelta: "0,6",
+                    tiTicketSummary: "Lorem Ipsum san quote de gutenburt inlas dela",
+                    tiNote: "empty",
+                    tiTasks: "none",
+                    tiDocBox: "rdeg.jpg,tzu.png",
+                    tiHistory: "5 Zugriffe"
+                },
+                {
+                    tiPriority: "hoch",
+                    tiContact: "CONTENTShare",
+                    tiProject: "dragon",
+                    tiAkt: "Tu545",
+                    tiRequester: "someone",
+                    tiDeliverwish: "01.01.2019",
+                    tiServiceType: "selected",
+                    tiEstimatedHours: "12",
+                    tiExpectedDelivery: "01.01.2019",
+                    tiTicketActualEffort: "10",
+                    tiTicketProcessingDays: "6",
+                    tiTicketDelta: "0,6",
+                    tiTicketSummary: "Lorem Ipsum san quote de gutenburt inlas dela",
+                    tiNote: "empty",
+                    tiTasks: "3",
+                    tiDocBox: "empty",
+                    tiHistory: "3 Zugriffe"
+                },
+                {
+                    tiPriority: "niedrig",
+                    tiContact: "CONTENTShare",
+                    tiProject: "tüv",
+                    tiAkt: "r6te",
+                    tiRequester: "paul",
+                    tiDeliverwish: "01.12.2018",
+                    tiServiceType: "selected",
+                    tiEstimatedHours: "12",
+                    tiExpectedDelivery: "01.12.2018",
+                    tiTicketActualEffort: "10",
+                    tiTicketProcessingDays: "2",
+                    tiTicketDelta: "0,6",
+                    tiTicketSummary: "Lorem Ipsum san quote de gutenburt inlas dela",
+                    tiNote: "empty",
+                    tiTasks: "none",
+                    tiDocBox: "mk2234.jpg,mk2235.png",
+                    tiHistory: "1 Zugriffe"
+                }
+                
+
+        ]
+    }
+    ];
+ 

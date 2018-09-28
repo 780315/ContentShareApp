@@ -1,0 +1,80 @@
+<ion-header>
+
+  <ion-navbar>
+
+    <ion-buttons end>
+      <button ion-button end id="navbarBackButton" color="dark" icon-only (click)="onGoRoot()">
+        <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-row justify>
+    <ion-col col-12>
+      <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-list>
+
+    <button ion-item text-center (click)="onGoToTask1()" *ngFor="let taskGroup of taskCollection">
+      <h2>Task 1</h2>
+      <h4>{{ taskGroup.tasks[0].taPriority }}</h4>
+      <h4>{{ taskGroup.tasks[0].taContact }}</h4>
+      <h4>{{ taskGroup.tasks[0].taTicketActualEffort }}</h4>
+    </button>
+
+  </ion-list>
+
+  <ion-list>
+
+    <button ion-item text-center (click)="onGoToTask2()" *ngFor="let taskGroup of taskCollection">
+      <h2>Task 2</h2>
+      <h4>{{ taskGroup.tasks[1].taPriority }}</h4>
+      <h4>{{ taskGroup.tasks[1].taContact }}</h4>
+      <h4>{{ taskGroup.tasks[1].taTicketActualEffort }}</h4>
+    </button>
+
+  </ion-list>
+
+  <ion-list>
+
+    <button ion-item text-center (click)="onGoToTask3()" *ngFor="let taskGroup of taskCollection">
+      <h2>Task 3</h2>
+      <h4>{{ taskGroup.tasks[2].taPriority }}</h4>
+      <h4>{{ taskGroup.tasks[2].taContact }}</h4>
+      <h4>{{ taskGroup.tasks[2].taTicketActualEffort }}</h4>
+    </button>
+
+  </ion-list>
+
+  <ion-list>
+
+    <button ion-item text-center (click)="onGoToTask4()" *ngFor="let taskGroup of taskCollection">
+      <h2>Task 4</h2>
+      <h4>{{ taskGroup.tasks[3].taPriority }}</h4>
+      <h4>{{ taskGroup.tasks[3].taContact }}</h4>
+      <h4>{{ taskGroup.tasks[3].taTicketActualEffort }}</h4>
+    </button>
+
+  </ion-list>
+
+  <ion-list>
+
+    <button ion-item text-center (click)="onGoToTask5()" *ngFor="let taskGroup of taskCollection">
+      <h2>Task 5</h2>
+      <h4>{{ taskGroup.tasks[4].taPriority }}</h4>
+      <h4>{{ taskGroup.tasks[4].taContact }}</h4>
+      <h4>{{ taskGroup.tasks[4].taTicketActualEffort }}</h4>
+    </button>
+
+  </ion-list>
+
+
+</ion-content>
